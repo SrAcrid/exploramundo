@@ -1,0 +1,127 @@
+.blog-container {
+  padding-top: 300px; /* Agrega espacio igual a la altura del encabezado */
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: #f0f0f0;
+  min-height: 100vh;
+  width: 100vw;
+  }
+  
+  .blog-header {
+    background-color: #5ca1ce;
+    color: #fff;
+    padding: 5px;
+    position: fixed; /* Cambia de absolute a fixed */
+    top: 0;
+    left: 0;
+    width: 100%;  /* Solución temporal para que no se salga de la pantalla el botón */
+    box-sizing: border-box; /* Para que el padding no aumente el ancho */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2; /* Asegura que esté sobre otros elementos */
+    height: 60px; /* Fija la altura para evitar problemas de superposición */
+  }
+  
+  h2 {
+    color: white;
+    font-size: 1.8rem;
+  }
+  
+  .user-menu {
+    position: relative;
+  }
+  
+  .menu-button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #3481b4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .menu-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 0.5rem;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    z-index: 10;
+  }
+  
+  .menu-dropdown button {
+    padding: 0.8rem;
+    background: none;
+    border: none;
+    text-align: left;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .menu-dropdown button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .destinations-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .destination-card {
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .destination-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .destination-card h3 {
+    margin: 0;
+    font-size: 1.4rem;
+    color: #333;
+  }
+  
+  .destination-card p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .error {
+    color: #d9534f;
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .toggle-review {
+    color: #007acc;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+  }
+  
+  .toggle-review:hover {
+    color: #005fa3;
+  }
+  

@@ -1,0 +1,96 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    /* display: flex; Quitamos esto pues fuerza un centrado de los objetos mas no define tamaño*/
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Estilos generales */
+  .landing-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh; /* Fuerza a ocupar toda la altura de la pantalla */
+    padding: 1rem;
+    text-align: center;
+    background-color: #7bbffa;
+    box-sizing: border-box; /* Incluye el padding en el ancho y alto del contenedor */
+    /* La pagina no estaba ocupando correctamente la pantalla mas con estos detalles debe ser suficiente */
+    min-width: 100vw;
+    width: 100vw;
+  }
+  
+  .landing-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .landing-container p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #333;
+  }
+  
+  .button-container {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .landing-button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    background-color: #007acc;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .landing-button:hover {
+    background-color: #005fa3;
+  }
+  
+  /* Ajustes responsivos */
+  @media (max-width: 768px) {
+    .landing-container h1 {
+      font-size: 2rem;
+    }
+  
+    .landing-container p {
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+    }
+  
+    .landing-button {
+      padding: 0.7rem 1.2rem;
+      font-size: 0.9rem;
+    }
+  
+    /* Cambia los botones a una columna en dispositivos móviles */
+    .button-container {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .landing-container h1 {
+      font-size: 1.8rem;
+    }
+  
+    .landing-container p {
+      font-size: 0.9rem;
+    }
+  
+    .landing-button {
+      padding: 0.6rem 1rem;
+      font-size: 0.8rem;
+    }
+  }
+  
